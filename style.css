@@ -5,25 +5,50 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+    background-color: rgb(80, 1, 80);
 }
+
+#raca{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+
 
 #pesquisar {
     background-color: transparent;
-    border: 1px solid purple;
+    border: 1px solid white;
+    color: white;
     cursor: pointer;
     margin-top: 15px;
     padding: 15px;
     border-radius: 10px;
+    font-size: 25px;
 }
 
 #pesquisar:hover{
     background-color: black;
     color: gold;
-    border: gold;
+    border: 2px solid gold;
     transition: 1s;
+}
+
+#galeria img {
+    width: 100%;
+    border: 5px solid gold;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+#galeria img:hover {
+    transform: scale(1.2);
+    box-shadow: gold 0px 0px 30px;
+    
+}
+
+#galeria {
+    margin-top: 15px;
+    display: columns;
+    columns: 4;
 }
